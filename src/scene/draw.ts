@@ -150,3 +150,14 @@ export const drawPlayne: Draw = (g, w, h) => {
   g.bezierCurveTo(hx + k * 0.7, hy - k * 1.5, hx + k * 1.8, hy - k * 0.2, hx, hy + k); g.closePath()
   g.fillStyle = "#2f8f55"; g.fill()
 }
+
+export const drawNoteTube: Draw = (g, w, h) => {
+  box(g, w, h, "#fbfaf5", 8)
+  g.beginPath(); g.roundRect(14, 14, w - 28, 82, 10); g.fillStyle = "#e24b4b"; g.fill()
+  g.strokeStyle = INK; g.lineWidth = 3; g.stroke()
+  g.beginPath(); g.moveTo(w / 2 - 12, 39); g.lineTo(w / 2 + 16, 55); g.lineTo(w / 2 - 12, 71); g.closePath()
+  g.fillStyle = "#fff"; g.fill()
+  g.strokeStyle = INK; g.lineWidth = 3; g.lineCap = "round"
+  for (let i = 0; i < 3; i++) { g.beginPath(); g.moveTo(18, 120 + i * 17); g.lineTo(w - 18 - (i === 2 ? 56 : 0), 120 + i * 17); g.stroke() }
+  txt(g, "NoteTube", w / 2, h - 12, 34, 700, INK, "center")
+}

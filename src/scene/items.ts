@@ -33,6 +33,7 @@ const all: DeskItem[] = [
   { key: "sketch", w: 3.4, h: 3.6, draw: D.drawSketch, x: -0.8, y: -3.2, rot: -0.08, depth: 0.6, action: { type: "project", id: "sketch" } },
   { key: "radar", w: 4, h: 3, draw: D.drawRadar, x: 5.2, y: -2.9, rot: 0.15, depth: 0.6, animated: true, action: { type: "project", id: "radar" } },
   { key: "playnex", w: 1.7, h: 2.7, draw: D.drawPlayne, x: 2.05, y: -3.5, rot: 0.12, depth: 0.7, action: { type: "project", id: "playnex" } },
+  { key: "notetube", w: 1.9, h: 2.1, draw: D.drawNoteTube, x: 2.5, y: 3.2, rot: -0.1, depth: 0.7, action: { type: "project", id: "notetube" } },
   // tape labels
   { key: "tape-software", w: 1.9, h: 0.5, draw: D.labelDraw("software", "#ee8a3b"), x: -2.9, y: 2.1, rot: -0.05, depth: 0.5 },
   { key: "tape-2026", w: 1.9, h: 0.5, draw: D.labelDraw("2026", "#ee8a3b"), x: -3.3, y: -1.4, rot: 0.04, depth: 0.5 },

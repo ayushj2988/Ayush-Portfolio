@@ -3,7 +3,7 @@ import { useReveal } from "../hooks/useReveal"
 import { projects, type ProjectId } from "../data/projects"
 
 const look: Record<ProjectId, { rot: number }> = {
-  playnex: { rot: -1.2 }, nova: { rot: 1.4 }, climate: { rot: -1.1 }, sketch: { rot: 1.3 }, radar: { rot: -1.5 },
+  notetube: { rot: 1.2 }, playnex: { rot: -1.2 }, nova: { rot: 1.4 }, climate: { rot: -1.1 }, sketch: { rot: 1.3 }, radar: { rot: -1.5 },
 }
 
 function Visual({ id }: { id: ProjectId }) {

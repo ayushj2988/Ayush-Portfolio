@@ -21,6 +21,7 @@ export const SITE = {
   contactAccessKey: "" as string,
   resumeDownloadName: "Ayush_Kumar_Joshi_Resume.pdf",
   projects: {
+    notetube: { live: "", github: "" }, // NoteTube
     playnex: { live: "", github: "" }, // PlayneX
     nova:    { live: "", github: "" }, // NOVA-Face
     climate: { live: "", github: "" }, // Climate Analytics

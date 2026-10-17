@@ -1,6 +1,6 @@
 import { SITE } from "../config"
 
-export type ProjectId = "playnex" | "nova" | "climate" | "sketch" | "radar"
+export type ProjectId = "notetube" | "playnex" | "nova" | "climate" | "sketch" | "radar"
 
 export type Project = {
   id: ProjectId
@@ -15,6 +15,18 @@ export type Project = {
 }
 
 export const projects: Record<ProjectId, Project> = {
+  notetube: {
+    id: "notetube", title: "NoteTube", meta: "Side project, in progress", status: "building now",
+    lead: "Turn a YouTube lecture into notes you can actually study from.",
+    points: [
+      "Takes a YouTube lecture and turns it into study notes, flashcards and quizzes.",
+      "Built with React, TypeScript and Vite.",
+      "A procedural 3D background (react-three-fiber and drei) sits behind a liquid-glass interface.",
+      "Currently redesigning the whole interface.",
+    ],
+    stack: ["React", "TypeScript", "Vite", "react-three-fiber", "drei"],
+    live: SITE.projects.notetube.live, github: SITE.projects.notetube.github,
+  },
   playnex: {
     id: "playnex", title: "PlayneX", meta: "Side project, in progress", status: "building now",
     lead: "Swipe through games like you swipe through profiles.",
